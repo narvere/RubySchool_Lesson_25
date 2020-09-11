@@ -1,0 +1,21 @@
+<h2>Контакт</h2>
+<form action='/contacts' method="post">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Ваше имя:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Имя" name='name' value="<%= @name %>">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Ваш email:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='email' value="<%= @email %>">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Ваше обращение:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" spellcheck="false" data-gramm="false" name='text' value="<%= @text %>"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Записаться</button>
+</form>
+<a href="/contacts.txt" id="samth">Записанные обращения</a>
+<br>
+<a href="javascript:history.back()">Go Back</a>
